@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo con Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4 border border-light">
+        <h1 class="display-4">Desarrollo de Aplicaciones Web</h1>
+        <nav class="nav justify-content-center border-bottom border-danger">
+            <a class="nav-link text-white bg-dark rounded-pill px-3 mx-1" href="#inicio">Inicio</a>
+            <a class="nav-link text-dark bg-warning rounded-pill px-3 mx-1" href="#seccion1">Sección 1</a>
+            <a class="nav-link text-white bg-success rounded-pill px-3 mx-1" href="#seccion2">Sección 2</a>
+            <a class="nav-link text-white bg-info rounded-pill px-3 mx-1" href="#acerca-de">Acerca de</a>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+        <section id="inicio" class="text-center bg-light text-dark p-5 shadow-lg rounded">
+            <h2 class="text-uppercase text-decoration-underline">Bienvenido</h2>
+            <p class="lead">HOLAAA!!!!, que introducción tan épica ¿no?</p>
+            <img src="1Y78.gif" class="img-thumbnail mb-3">
+            <p>Este sitio web es como esa pizarra llena de garabatos que encuentras en la oficina del genio loco, pero más organizado y sin el riesgo de manchas de marcador en tus manos.</p>
+        </section>
+
+        <section id="seccion1" class="my-4">
+            <h2 class="text-center text-primary border-bottom border-3 border-secondary pb-2">Sección 1</h2>
+            <p class="fst-italic text-muted">Contenido de la Sección 1</p>
+            <table class="table table-bordered table-hover table-sm">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                        <th>Columna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                        <td>Dato 3</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 4</td>
+                        <td>Dato 5</td>
+                        <td>Dato 6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="seccion2" class="my-4">
+            <h2 class="text-center text-danger bg-warning py-2 rounded">Sección 2</h2>
+            <p class="fw-bold">Contenido de la Sección 2</p>
+            <form action="procesar.php" method="post" class="row g-3 border p-4 rounded">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-outline-primary btn-lg">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="acerca-de" class="my-4">
+            <h2 class="text-center bg-info text-white py-3 rounded">Acerca de</h2>
+            <p>Información sobre el sitio web o el autor.</p>
+            <ul class="list-group">
+                <li class="list-group-item">Elemento 1 de la lista.</li>
+                <li class="list-group-item">Elemento 2 de la lista.</li>
+                <li class="list-group-item">Elemento 3 de la lista.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <p class="mb-0">&copy; 2024 Mi sitio web</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
